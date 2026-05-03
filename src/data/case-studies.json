@@ -1,0 +1,66 @@
+[
+  {
+    "projectName": "Bold Flavours",
+    "slug": "bold-flavours",
+    "clientBrand": "Bold",
+    "thumbnailVideo": "./Work/Other Work/BOLD flavours - Bold Orange, Bold Tropical, Bold Bitter Lemon and Bold Ginger..mp4",
+    "roleServices": ["Motion Design", "3D Animation"],
+    "year": 2024
+  },
+  {
+    "projectName": "ARM PayDay - Airport",
+    "slug": "arm-payday-airport",
+    "clientBrand": "ARM",
+    "thumbnailVideo": "./Work/Other Work/PayDay2_ARM_Airport_Ainmation_05a.mp4",
+    "roleServices": ["3D Motion Design", "Visual Effects"],
+    "year": 2024
+  },
+  {
+    "projectName": "ARM PayDay - Hospital",
+    "slug": "arm-payday-hospital",
+    "clientBrand": "ARM",
+    "thumbnailVideo": "./Work/Other Work/PayDay2_ARM_Hospital_Ainmation_02a.mp4",
+    "roleServices": ["3D Motion Design", "Animation"],
+    "year": 2024
+  },
+  {
+    "projectName": "ARM PayDay - School Fees",
+    "slug": "arm-payday-school-fees",
+    "clientBrand": "ARM",
+    "thumbnailVideo": "./Work/Other Work/Payday_ARM_school_fees_v1 (1080p).mp4",
+    "roleServices": ["Motion Graphics", "Campaign"],
+    "year": 2024
+  },
+  {
+    "projectName": "MicroPension Explainer",
+    "slug": "micropension-explainer",
+    "clientBrand": "ARM",
+    "thumbnailVideo": "./Work/Other Work/MicroPension_Script01_T03a_07.mp4",
+    "roleServices": ["Illustration", "Motion Design"],
+    "year": 2024
+  },
+  {
+    "projectName": "Investor How-to Video",
+    "slug": "arm-investor-howto",
+    "clientBrand": "ARM",
+    "thumbnailVideo": "./Work/Other Work/arm_payday_investor_howtovideo_v1.mp4",
+    "roleServices": ["Tutorial", "Motion Graphics"],
+    "year": 2023
+  },
+  {
+    "projectName": "Lucozade Airtime Promo",
+    "slug": "lucozade-promo",
+    "clientBrand": "Lucozade",
+    "thumbnailVideo": "./Work/Other Work/lucozade_airtime_promo_explainer_v1 (1080p).mp4",
+    "roleServices": ["Explainer Video", "Promotion"],
+    "year": 2023
+  },
+  {
+    "projectName": "MicroPension Script 03a",
+    "slug": "micropension-03a",
+    "clientBrand": "ARM",
+    "thumbnailVideo": "./Work/Other Work/MicroPension_Script_03a.mp4",
+    "roleServices": ["Motion Design"],
+    "year": 2024
+  }
+]

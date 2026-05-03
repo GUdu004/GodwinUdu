@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godwin Udu &mdash; Motion Design</title>
+    
+    <!-- SEO & Performance Meta Tags -->
+    <meta name="description" content="Portfolio of Godwin Udu, Motion Designer. 'Never Settle'.">
+    <meta name="theme-color" content="#0c0d12">
+    
+    <!-- Preconnect to exact CDN origins for aggressive performance -->
+    <link rel="preconnect" href="https://stream.mux.com">
+    <link rel="preconnect" href="https://res.cloudinary.com">
+    
+    <!-- Preconnect to Font servers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Deferred loading of heavy display fonts - ensuring system font swap for instant First Contentful Paint -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"></noscript>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="./src/styles/global.css">
+    
+    <!-- Standard Mux Player Element (Deferred) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@mux/mux-player"></script>
+</head>
+<body>
+
+    <!-- Phase 2: Pre-loader Veil -->
+    <div id="preloader" style="position: fixed; inset: 0; background-color: var(--bg-base); z-index: 9999; display: flex; justify-content: center; align-items: center;"></div>
+
+    <!-- Header / Nav -->
+    <header class="container interactive" style="padding-top: 2rem; padding-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 100; position: relative;">
+        <!-- Logo -->
+        <a href="index.html" class="logo" style="text-decoration: none; display: flex; align-items: center;">
+            <img src="./Image/GodwinUdu_Logo.png" alt="Godwin Udu Logo" style="height: 24px; width: auto; object-fit: contain;">
+        </a>
+        
+        <!-- Nav Links -->
+        <nav style="display: flex; gap: 2.5rem; font-size: 0.9rem; font-weight: 600;">
+            <a href="#work" class="text-primary" style="text-decoration: none;">Work /</a>
+            <a href="about.html" class="text-primary" style="text-decoration: none;">About /</a>
+            <a href="#sandbox" class="text-primary" style="text-decoration: none;">Sandbox /</a>
+        </nav>
+        
+        <!-- CTA Button -->
+        <div style="display: flex; align-items: center;">
+            <a href="#start" style="background: #fff; color: #000; padding: 0.8rem 1.5rem; text-decoration: none; font-weight: 600; font-size: 0.9rem; border-radius: 4px 0 0 4px;">Start Your Project</a>
+            <a href="#start" style="background: #222; color: #fff; padding: 0.8rem 1rem; text-decoration: none; border-radius: 0 4px 4px 0;">&rarr;</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================
+             HERO SECTION (Trusted By...)
+             ========================================== -->
+        <section class="hero-section container" style="position: relative; padding-top: 8rem; padding-bottom: 4rem;">
+            
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 5rem;">
+                <!-- Main Typography -->
+                <div class="hero-typography" style="flex: 1;">
+                    <h1 class="font-brutalist gsap-hardware-accelerate" style="font-size: var(--text-display); line-height: 1.1; text-transform: none; letter-spacing: -0.01em;">Moving Brands</h1>
+                    <div style="display: flex; align-items: baseline;">
+                        <h1 class="font-brutalist gsap-hardware-accelerate" style="font-size: var(--text-display); line-height: 1.1; text-transform: none; letter-spacing: -0.01em;">Through </h1>
+                        <h1 class="font-display gsap-hardware-accelerate text-accent" style="font-size: calc(var(--text-display) * 1.2); margin-left: -0.5rem; margin-bottom: -1rem;">Motion</h1>
+                    </div>
+                </div>
+
+                <!-- Side Intro Text -->
+                <div style="max-width: 400px; padding-bottom: 2rem;">
+                    <p style="font-size: 1.25rem; line-height: 1.5; font-weight: 500;">
+                        Partnering with global brands to drive impact through 2D, 3D, and Motion Design.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Client Logos Marquee / List -->
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 3rem 0; border-top: 1px solid rgba(255,255,255,0.05); gap: 4rem; overflow: hidden;">
+                <img src="./Image/Client logo/Vorker-AI.png" alt="Vorker AI" style="height: 30px; width: auto; object-fit: contain;">
+                <img src="./Image/Client logo/logo.png" alt="Nescafe" style="height: 45px; width: auto; object-fit: contain;">
+                <img src="./Image/Client logo/NCAA_Logo.png" alt="NCAA" style="height: 55px; width: auto; object-fit: contain;">
+                <img src="./Image/Client logo/Union Bank Logo White.png" alt="Union Bank" style="height: 40px; width: auto; object-fit: contain;">
+                <img src="./Image/Client logo/Maggi_Logo.png" alt="Maggi" style="height: 50px; width: auto; object-fit: contain;">
+            </div>
+            
+        </section>
+
+        <!-- ==========================================
+             STAGGERED GRID LAYOUT (Case Studies)
+             ========================================== -->
+        <section id="work" class="container" style="padding-top: 6rem; padding-bottom: 10rem;">
+            
+            <!-- Section Header -->
+            <div style="display: flex; align-items: center; margin-bottom: 4rem; gap: 1rem;">
+                <h4 style="color: var(--accent-primary); letter-spacing: 2px; font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">Featured Projects</h4>
+            </div>
+
+            <!-- 2-Column Staggered Grid Implementation -->
+            <div class="staggered-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+                
+                <!-- Item 1 (Left column, shifted up in layout/CSS) -->
+                <a href="vorker-ai.html" style="text-decoration: none; color: inherit; display: block;">
+                    <article class="project-card interactive" style="display: flex; flex-direction: column; gap: 1.25rem;">
+                        <div style="aspect-ratio: 4/3; background-color: var(--bg-surface); overflow: hidden; border-radius: 8px; position: relative;">
+                            <!-- Vorker AI Video Thumbnail -->
+                            <video 
+                                src="./Work/Work 1 Vorker AI/VorkerAI_April2026Video_05.mp4" 
+                                muted 
+                                loop 
+                                playsinline 
+                                style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: opacity 0.3s ease;"
+                            ></video>
+                        </div>
+                        <div>
+                            <p style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin-bottom: 0.5rem; color: var(--accent-primary);">VORKER AI</p>
+                            <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Vorker AI Motion Design, Animation and Video Edit</h3>
+                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; color: #ccc;">Motion Design</span>
+                                <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; color: #ccc;">Animation</span>
+                                <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; color: #ccc;">Video Edit</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Item 2 (Right column, pushed down visually via css/margin) -->
+                <a href="nescafe.html" style="text-decoration: none; color: inherit; display: block;">
+                    <article class="project-card interactive" style="display: flex; flex-direction: column; gap: 1.25rem; margin-top: 8rem;">
+                        <div style="aspect-ratio: 4/3; background-color: var(--bg-surface); overflow: hidden; border-radius: 8px; position: relative;">
+                            <!-- Nescafe Video Thumbnail -->
+                            <video 
+                                src="./Work/Work 2 Nescafe/Nescafe_RSP_Video_01.mp4" 
+                                muted 
+                                loop 
+                                playsinline 
+                                style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: opacity 0.3s ease;"
+                            ></video>
+                        </div>
+                        <div>
+                            <p style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin-bottom: 0.5rem; color: var(--accent-primary);">NESCAFE</p>
+                            <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Nescafe Red Shopper Promotion - One push to Start Strong</h3>
+                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; color: #ccc;">Motion Design</span>
+                                <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; color: #ccc;">Campaign</span>
+                                <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; color: #ccc;">Advertising</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Item 3 (Left column) -->
+                <a href="nacc.html" style="text-decoration: none; color: inherit; display: block;">
+                    <article class="project-card interactive" style="display: flex; flex-direction: column; gap: 1.25rem;">
+                        <div style="aspect-ratio: 4/3; background-color: var(--bg-surface); overflow: hidden; border-radius: 8px; position: relative;">
+                            <!-- NACC Video Thumbnail -->
+                            <video 
+                                src="./Work/Work 3 NACC/NCAA_ReOpening_Animation_03.mp4" 
+                                muted 
+                                loop 
+                                playsinline 
+                                style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: opacity 0.3s ease;"
+                            ></video>
+                        </div>
+                        <div>
+                            <p style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin-bottom: 0.5rem; color: var(--accent-primary);">NCAA</p>
+                            <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Nigerian Civil Aviation Authority Reopening Animation</h3>
+                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; color: #ccc;">Motion Design</span>
+                                <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; color: #ccc;">2D Animation</span>
+                                <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; color: #ccc;">Public Safety</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+
+                <!-- Item 4 (Right column) -->
+                <a href="union-bank.html" style="text-decoration: none; color: inherit; display: block;">
+                    <article class="project-card interactive" style="display: flex; flex-direction: column; gap: 1.25rem; margin-top: 8rem;">
+                        <div style="aspect-ratio: 4/3; background-color: var(--bg-surface); overflow: hidden; border-radius: 8px; border-top-right-radius: 40px; position: relative;">
+                            <!-- Union Bank Video Thumbnail -->
+                            <video 
+                                src="./Work/Work 4 Union Bank/UBN_Save&WinPromo_Video_NewVO_06b.mp4" 
+                                muted 
+                                loop 
+                                playsinline 
+                                style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: opacity 0.3s ease;"
+                            ></video>
+                        </div>
+                        <div>
+                            <p style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin-bottom: 0.5rem; color: var(--accent-primary);">UNION BANK</p>
+                            <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Union Bank 105th Anniversary "Save & Win" Campaign</h3>
+                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; color: #ccc;">Motion Design</span>
+                                <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; color: #ccc;">Banking</span>
+                                <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; color: #ccc;">Promotional</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+
+                <!-- Item 5 (Left column) -->
+                <a href="maggi.html" style="text-decoration: none; color: inherit; display: block;">
+                    <article class="project-card interactive" style="display: flex; flex-direction: column; gap: 1.25rem;">
+                        <div style="aspect-ratio: 1/1; background-color: var(--bg-surface); overflow: hidden; border-radius: 8px; border-top-left-radius: 40px; position: relative;">
+                            <!-- Maggi Video Thumbnail -->
+                            <video 
+                                src="./Work/Work 5 Maggi/Maggi_JolloveWisdom_Video_05.mp4" 
+                                muted 
+                                loop 
+                                playsinline 
+                                style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: opacity 0.3s ease;"
+                            ></video>
+                        </div>
+                        <div>
+                            <p style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin-bottom: 0.5rem; color: var(--accent-primary);">MAGGI</p>
+                            <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Maggi Jollove Wisdom Campaign</h3>
+                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; color: #ccc;">Motion Design</span>
+                                <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; color: #ccc;">Social Media</span>
+                                <span style="font-size: 0.75rem; padding: 0.25rem 0.75rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; color: #ccc;">FMCG</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             OTHER WORKS SECTION (Dynamic CMS Grid)
+             ========================================== -->
+        <section id="other-works" class="container" style="padding-top: 0; padding-bottom: 10rem;">
+            
+            <!-- Section Header -->
+            <div style="display: flex; align-items: center; margin-bottom: 4rem; gap: 1rem;">
+                <h4 style="color: var(--accent-primary); letter-spacing: 2px; font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">Other Works</h4>
+            </div>
+
+            <!-- Grid container for Other Works -->
+            <div id="other-works-grid" class="uniform-grid">
+                
+                <!-- Item 1: Bold Flavours -->
+                <a href="#" class="work-card gsap-hardware-accelerate interactive">
+                    <div class="work-card-media">
+                        <video src="./Work/Other Work/BOLD flavours - Bold Orange, Bold Tropical, Bold Bitter Lemon and Bold Ginger..mp4" muted loop playsinline></video>
+                    </div>
+                    <div class="work-card-info">
+                        <span class="work-card-client">Bold</span>
+                        <h3 class="work-card-title">Bold Flavours Campaign</h3>
+                    </div>
+                </a>
+
+                <!-- Item 2: ARM PayDay Airport -->
+                <a href="#" class="work-card gsap-hardware-accelerate interactive">
+                    <div class="work-card-media">
+                        <video src="./Work/Other Work/PayDay2_ARM_Airport_Ainmation_05a.mp4" muted loop playsinline></video>
+                    </div>
+                    <div class="work-card-info">
+                        <span class="work-card-client">ARM</span>
+                        <h3 class="work-card-title">ARM PayDay - Airport Animation</h3>
+                    </div>
+                </a>
+
+                <!-- Item 3: ARM PayDay Hospital -->
+                <a href="#" class="work-card gsap-hardware-accelerate interactive">
+                    <div class="work-card-media">
+                        <video src="./Work/Other Work/PayDay2_ARM_Hospital_Ainmation_02a.mp4" muted loop playsinline></video>
+                    </div>
+                    <div class="work-card-info">
+                        <span class="work-card-client">ARM</span>
+                        <h3 class="work-card-title">ARM PayDay - Hospital Animation</h3>
+                    </div>
+                </a>
+
+                <!-- Item 4: ARM School Fees -->
+                <a href="#" class="work-card gsap-hardware-accelerate interactive">
+                    <div class="work-card-media">
+                        <video src="./Work/Other Work/Payday_ARM_school_fees_v1 (1080p).mp4" muted loop playsinline></video>
+                    </div>
+                    <div class="work-card-info">
+                        <span class="work-card-client">ARM</span>
+                        <h3 class="work-card-title">ARM PayDay - School Fees Promo</h3>
+                    </div>
+                </a>
+
+                <!-- Item 5: MicroPension Explainer -->
+                <a href="#" class="work-card gsap-hardware-accelerate interactive">
+                    <div class="work-card-media">
+                        <video src="./Work/Other Work/MicroPension_Script01_T03a_07.mp4" muted loop playsinline></video>
+                    </div>
+                    <div class="work-card-info">
+                        <span class="work-card-client">ARM</span>
+                        <h3 class="work-card-title">MicroPension Explainer Video</h3>
+                    </div>
+                </a>
+
+                <!-- Item 6: Lucozade Airtime -->
+                <a href="#" class="work-card gsap-hardware-accelerate interactive">
+                    <div class="work-card-media">
+                        <video src="./Work/Other Work/lucozade_airtime_promo_explainer_v1 (1080p).mp4" muted loop playsinline></video>
+                    </div>
+                    <div class="work-card-info">
+                        <span class="work-card-client">Lucozade</span>
+                        <h3 class="work-card-title">Lucozade Airtime Promo</h3>
+                    </div>
+                </a>
+
+                <!-- Item 7: Investor How-To -->
+                <a href="#" class="work-card gsap-hardware-accelerate interactive">
+                    <div class="work-card-media">
+                        <video src="./Work/Other Work/arm_payday_investor_howtovideo_v1.mp4" muted loop playsinline></video>
+                    </div>
+                    <div class="work-card-info">
+                        <span class="work-card-client">ARM</span>
+                        <h3 class="work-card-title">Investor How-To Tutorial</h3>
+                    </div>
+                </a>
+
+                <!-- Item 8: MicroPension Script 03a -->
+                <a href="#" class="work-card gsap-hardware-accelerate interactive">
+                    <div class="work-card-media">
+                        <video src="./Work/Other Work/MicroPension_Script_03a.mp4" muted loop playsinline></video>
+                    </div>
+                    <div class="work-card-info">
+                        <span class="work-card-client">ARM</span>
+                        <h3 class="work-card-title">MicroPension Animation - v2</h3>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Phase 4: Dynamic cursor base styling -->
+
+    <style>
+        .custom-cursor {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--text-primary);
+            pointer-events: none;
+            z-index: 10000;
+            mix-blend-mode: difference;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cursor-text {
+            opacity: 0;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            pointer-events: none;
+        }
+    </style>
+
+    <!-- JS Scripts Deferred to end of body -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script type="module">
+        // Hover-to-play and Modal logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.project-card, .work-card');
+            const modal = document.getElementById('videoModal');
+            const modalVideo = document.getElementById('modalVideo');
+            const closeModal = document.getElementById('closeModal');
+
+            cards.forEach(card => {
+                const video = card.querySelector('video');
+                if (!video) return;
+                
+                // Existing Hover behavior
+                card.addEventListener('mouseenter', () => {
+                    video.play().catch(err => console.log('Video play interrupted:', err));
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    video.pause();
+                });
+
+                // Modal Click behavior for Other Works
+                if (card.classList.contains('work-card')) {
+                    card.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const videoSrc = video.getAttribute('src');
+                        modalVideo.setAttribute('src', videoSrc);
+                        modal.classList.add('active');
+                        modalVideo.play();
+                    });
+                }
+            });
+
+            // Close modal
+            const handleClose = () => {
+                modal.classList.remove('active');
+                modalVideo.pause();
+                modalVideo.setAttribute('src', '');
+            };
+
+            if (closeModal) closeModal.addEventListener('click', handleClose);
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) handleClose();
+                });
+            }
+        });
+    </script>
+
+    <!-- Video Modal Popup -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <button class="video-modal-close" id="closeModal">Close &mdash;</button>
+            <video id="modalVideo" controls playsinline></video>
+        </div>
+    </div>
+    <script src="./src/js/animations.js"></script>
+</body>
+</html>

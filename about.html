@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About &mdash; Godwin Udu</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Godwin Udu — AI Media Workflow Designer & Technical Creative. Over 9 years of experience in motion graphics and AI-driven media workflows.">
+    <meta name="theme-color" content="#0c0d12">
+
+    <!-- Preconnect to Font servers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="./src/styles/global.css">
+    
+    <style>
+        body {
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 20%;
+            left: 10%;
+            width: 40vw;
+            height: 40vw;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.03) 0%, transparent 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 8rem;
+            margin-top: 4rem;
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .experience-item:hover {
+            background: rgba(255, 255, 255, 0.04);
+            border-color: rgba(212, 175, 55, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .skill-badge {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-right: 0.6rem;
+            margin-bottom: 0.8rem;
+            transition: all 0.3s ease;
+            color: var(--text-primary);
+        }
+
+        .skill-badge:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            background: rgba(212, 175, 55, 0.1);
+            transform: scale(1.05);
+        }
+
+        .profile-img-container {
+            position: relative;
+            aspect-ratio: 1/1;
+            background: var(--bg-surface);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-img-container::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 60%, var(--bg-base) 100%);
+        }
+
+        @media (max-width: 992px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+            }
+        }
+
+        .section-label {
+            color: var(--accent-primary);
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-label::before {
+            content: '';
+            width: 30px;
+            height: 1px;
+            background: var(--accent-primary);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Phase 2: Pre-loader Veil -->
+    <div id="preloader" style="position: fixed; inset: 0; background-color: var(--bg-base); z-index: 9999; display: flex; justify-content: center; align-items: center;"></div>
+
+    <!-- Header / Nav -->
+    <header class="container interactive" style="padding-top: 2rem; padding-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 100; position: relative;">
+        <!-- Logo -->
+        <a href="index.html" style="text-decoration: none;">
+            <img src="./Image/GodwinUdu_Logo.png" alt="Godwin Udu Logo" style="height: 24px; width: auto; object-fit: contain;">
+        </a>
+        
+        <!-- Nav Links -->
+        <nav style="display: flex; gap: 2.5rem; font-size: 0.9rem; font-weight: 600;">
+            <a href="index.html#work" class="text-primary" style="text-decoration: none;">Work /</a>
+            <a href="about.html" class="text-primary" style="text-decoration: none; color: var(--accent-primary);">About /</a>
+            <a href="index.html#sandbox" class="text-primary" style="text-decoration: none;">Sandbox /</a>
+        </nav>
+        
+        <!-- CTA Button -->
+        <div style="display: flex; align-items: center;">
+            <a href="mailto:godwinudu01@gmail.com" style="background: #fff; color: #000; padding: 0.8rem 1.5rem; text-decoration: none; font-weight: 600; font-size: 0.9rem; border-radius: 4px 0 0 4px;">Contact Me</a>
+            <a href="mailto:godwinudu01@gmail.com" style="background: #222; color: #fff; padding: 0.8rem 1rem; text-decoration: none; border-radius: 0 4px 4px 0;">&rarr;</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="container" style="padding-top: 8rem; padding-bottom: 6rem;">
+            <div class="hero-typography" style="max-width: 1000px;">
+                <h1 class="font-brutalist" style="font-size: var(--text-display); margin-bottom: 1rem;">The Technical</h1>
+                <h1 class="font-display text-accent" style="font-size: calc(var(--text-display) * 1.2); margin-top: -1.5rem; margin-bottom: 3rem;">Creative</h1>
+                <p style="font-size: 1.5rem; line-height: 1.5; font-weight: 500; color: var(--text-primary); max-width: 800px;">
+                    I am a Technical Creative with over 9 years of experience delivering high-performing visual assets across motion graphics, interactive media, and digital publishing.
+                </p>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section class="container" style="padding-bottom: 10rem;">
+            <div class="about-grid">
+                <!-- Left Column: Biography & Skills -->
+                <div>
+                    <div class="section-label">Profile</div>
+                    <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 3rem;">
+                        Proven ability to build scalable, end-to-end AI-driven media workflows and translate creative intent into structured production pipelines. Adept at leveraging ComfyUI, Generative AI, and industry-standard creative tools (Adobe After Effects, Premiere Pro) to automate and accelerate media asset generation.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 4rem;">
+                        Passionate about cross-functional collaboration, embedding quality gates, and turning fragmented processes into highly efficient, production-ready systems that ensure visual consistency and high-quality outputs.
+                    </p>
+
+                    <div class="section-label">Core Competencies</div>
+                    <div style="margin-bottom: 4rem;">
+                        <span class="skill-badge">AI Media Workflows</span>
+                        <span class="skill-badge">ComfyUI</span>
+                        <span class="skill-badge">Generative AI Mastermind</span>
+                        <span class="skill-badge">Pipeline Optimization</span>
+                        <span class="skill-badge">Quality Gates</span>
+                        <span class="skill-badge">Adobe After Effects</span>
+                        <span class="skill-badge">Motion Design</span>
+                        <span class="skill-badge">3D Generalist</span>
+                        <span class="skill-badge">Unreal Engine</span>
+                        <span class="skill-badge">XR Development</span>
+                        <span class="skill-badge">Rapid Prototyping</span>
+                    </div>
+
+                    <div class="section-label">Certifications</div>
+                    <div style="font-size: 0.95rem; line-height: 1.8; color: var(--text-muted);">
+                        <div style="margin-bottom: 0.5rem;"><strong style="color: var(--text-primary);">Unreal Authorized Instructor</strong> — Recognized by Epic Games</div>
+                        <div style="margin-bottom: 0.5rem;"><strong style="color: var(--text-primary);">Generative AI Mastermind</strong> — Outskill</div>
+                        <div style="margin-bottom: 0.5rem;"><strong style="color: var(--text-primary);">Rapid Prototyping for VR</strong> — Interaction Design Foundation</div>
+                        <div style="margin-bottom: 0.5rem;"><strong style="color: var(--text-primary);">Strategic Branding</strong> — Central Saint Martins, London</div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Experience -->
+                <div>
+                    <div class="section-label">Experience</div>
+                    
+                    <div class="experience-item">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+                            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary);">Epicenter</h3>
+                            <span style="font-size: 0.85rem; color: var(--accent-primary);">2025 &mdash; 2026</span>
+                        </div>
+                        <p style="font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 1rem;">XR Developer (Technical Prototyping)</p>
+                        <p style="font-size: 1rem; line-height: 1.6; color: var(--text-muted);">
+                            Designing functional interactive simulations to validate technical use cases in manufacturing and Digital Twins. Integrating mathematical models into real-time environments.
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+                            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary);">Kucheza Gaming</h3>
+                            <span style="font-size: 0.85rem; color: var(--accent-primary);">2023 &mdash; Present</span>
+                        </div>
+                        <p style="font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 1rem;">Unreal Engine Pro & Full-Time Trainer</p>
+                        <p style="font-size: 1rem; line-height: 1.6; color: var(--text-muted);">
+                            Implementing structured production pipelines and SOPs. Integrating AI automation tools (ComfyUI) to streamline asset generation workflows.
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+                            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary);">Image & Time Ltd</h3>
+                            <span style="font-size: 0.85rem; color: var(--accent-primary);">2016 &mdash; 2022</span>
+                        </div>
+                        <p style="font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 1rem;">Senior Motion Designer & Design Lead</p>
+                        <p style="font-size: 1rem; line-height: 1.6; color: var(--text-muted);">
+                            Produced high-quality motion graphics and video content for global brands using After Effects, Premiere Pro, and Cinema 4D.
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+                            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary);">Luxcity</h3>
+                            <span style="font-size: 0.85rem; color: var(--accent-primary);">2016 &mdash; 2022</span>
+                        </div>
+                        <p style="font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 1rem;">Head of Engineering and Design</p>
+                        <p style="font-size: 1rem; line-height: 1.6; color: var(--text-muted);">
+                            Led design from concept to delivery, developing rapid prototypes and building scalable design systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section style="background-color: var(--bg-surface); padding: 8rem 0;">
+            <div class="container">
+                <div class="section-label">Education</div>
+                <div class="about-grid" style="gap: 2rem; margin-top: 2rem;">
+                    <div>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Hyper Island</h3>
+                        <p style="font-size: 1rem; color: var(--accent-primary); margin-bottom: 1rem;">Diploma in XR Creative Development (2024 - 2026)</p>
+                        <p style="font-size: 1rem; color: var(--text-muted);">Specializing in VR/AR/MR, Game Development, and 3D Art.</p>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">FUTO</h3>
+                        <p style="font-size: 1rem; color: var(--accent-primary); margin-bottom: 1rem;">Bachelor of Engineering (B.Eng.), Chemical Engineering</p>
+                        <p style="font-size: 1rem; color: var(--text-muted);">Federal University of Technology Owerri.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer / Contact CTA -->
+        <section class="container" style="padding: 10rem 0; text-align: center;">
+            <h2 class="font-display" style="font-size: var(--text-xl); margin-bottom: 2rem;">Let's build the future of media together.</h2>
+            <a href="mailto:godwinudu01@gmail.com" class="font-brutalist text-accent" style="font-size: var(--text-display); text-decoration: none; display: block; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                Get In Touch &rarr;
+            </a>
+            <div style="margin-top: 4rem; display: flex; justify-content: center; gap: 2rem; font-weight: 600; font-size: 0.9rem;">
+                <a href="https://linkedin.com/in/godwin-udu" target="_blank" class="text-primary">LinkedIn</a>
+                <a href="https://drive.google.com/file/d/1obrmC2ygHYIjIQON0-O9ONu-WHyVxXxO/view?usp=drive_link" target="_blank" class="text-primary">Show Reel</a>
+                <a href="mailto:godwinudu01@gmail.com" class="text-primary">Email</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./src/js/animations.js"></script>
+    <script>
+        gsap.from(".section-label, .experience-item, .skill-badge", {
+            scrollTrigger: {
+                trigger: "main",
+                start: "top 50%",
+            },
+            y: 30,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.1,
+            ease: "power3.out"
+        });
+    </script>
+</body>
+</html>

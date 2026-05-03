@@ -1,0 +1,345 @@
+/* =========================================================================
+   Godwin Udu Motion Design Portfolio - Global Design System CSS
+   =========================================================================
+   Paradigm: 'Never Settle'
+   Theme: Bold Minimalism
+   Implementation of context/Feature_Spec/01_Design_System.md
+   ========================================================================= */
+
+:root {
+  /* -----------------------------------------------------------------------
+     1. Color Palette (Strictly 3-5 colors)
+     ----------------------------------------------------------------------- */
+  /* Future Dust: Dark blue with purple/grey undertones */
+  --bg-base: #0c0d12;
+  
+  /* Neutral contrast for case study cards/thumbnails */
+  --bg-surface: #15161d;
+  
+  /* High contrast off-white for crisp legibility */
+  --text-primary: #f4f5f6;
+  
+  /* Mid-tone neutral for secondary text/metadata */
+  --text-muted: #8b8d98;
+  
+  /* Vibrant Accent / Metallic Hue for key interactive elements */
+  --accent-primary: #d4af37; /* Metallic Gold Accent fallback */
+
+  /* -----------------------------------------------------------------------
+     2. Typography Tension
+     ----------------------------------------------------------------------- */
+  /* Highly ornamental retro serif for display/headers */
+  --font-display: 'Ogg', 'Playfair Display', 'Cinzel', serif;
+  
+  /* Bold, condensed brutalist sans-serif for impact/accents */
+  --font-bold: 'Anton', 'Impact', 'Tungsten', sans-serif;
+  
+  /* System font stack for heavily utilized UI text to prevent 'First Section' load delays */
+  --font-ui: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  /* Typography Scales */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --text-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --text-lg: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --text-display: clamp(3rem, 2rem + 5vw, 6rem);
+  --text-brutalist: clamp(4rem, 3rem + 8vw, 10rem);
+}
+
+/* =========================================================================
+   Base HTML/Body Reset & Performance Invariants
+   ========================================================================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-ui); /* Default to fast-loading system fonts */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+/* =========================================================================
+   Typography Application
+   ========================================================================= */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  color: var(--text-primary);
+  font-size: var(--text-display);
+  line-height: 1.1;
+}
+
+.font-brutalist {
+  font-family: var(--font-bold);
+  color: var(--text-primary);
+  font-size: var(--text-brutalist);
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-accent {
+  color: var(--accent-primary);
+}
+
+/* =========================================================================
+   Extensive White Space & Grid Primitives (Bold Minimalism)
+   ========================================================================= */
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.non-uniform-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+}
+
+.staggered-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .staggered-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .staggered-grid article {
+    margin-top: 0 !important;
+  }
+  
+  .hero-typography h1 {
+    font-size: var(--text-xl) !important;
+  }
+}
+
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 5vw;
+}
+
+.non-uniform-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: clamp(1rem, 2vw, 3rem);
+}
+
+.surface-card {
+  background-color: var(--bg-surface);
+  /* Sharp or meticulously consistent geometries */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* =========================================================================
+   GSAP 60fps Hardware Acceleration & Invariants
+   ========================================================================= */
+/* Elements heavily animated by GSAP should hint the browser early */
+.gsap-hardware-accelerate {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Interactive elements should transition smoothly, outside of programmatic GSAP lines */
+a, button, .interactive {
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Hide scrollbar for a seamless, app-like portfolio experience */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-surface);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* =========================================================================
+   Click-to-Load Mechanics & Media Helpers
+   ========================================================================= */
+.click-to-load-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--bg-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.asset-optimized {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* Enforce rendering limits on media */
+  content-visibility: auto;
+}
+
+/* =========================================================================
+   Uniform Grid & Beveled Cards (Other Works)
+   ========================================================================= */
+.uniform-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+.work-card-media {
+  aspect-ratio: 1/1;
+  background-color: var(--bg-surface);
+  overflow: hidden;
+  position: relative;
+  clip-path: polygon(0 0, 88% 0, 100% 12%, 100% 100%, 0 100%);
+  transition: transform 0.5s cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+.work-card:hover .work-card-media {
+  transform: scale(1.03);
+}
+
+.work-card-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.work-card:hover .work-card-media video {
+  opacity: 1;
+}
+
+.work-card-info {
+  margin-top: 1.5rem;
+}
+
+.work-card-client {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.work-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* =========================================================================
+   Video Modal Popup
+   ========================================================================= */
+.video-modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.98);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.2, 0, 0.2, 1);
+  padding: 4vw;
+}
+
+.video-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.video-modal-content {
+  width: 100%;
+  max-width: 1400px;
+  aspect-ratio: 16/9;
+  background: #000;
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+.video-modal.active .video-modal-content {
+  transform: translateY(0);
+}
+
+.video-modal-content video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
+
+.video-modal-close {
+  position: absolute;
+  top: -4rem;
+  right: 0;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.video-modal-close:hover {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .uniform-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .uniform-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
